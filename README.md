@@ -2,6 +2,8 @@
 # Author
 David Musembi
 ## Screenshot of Quote-App
+![Screenshot from 2022-04-10 01-13-59](https://user-images.githubusercontent.com/51710726/162593288-aa62a017-8d29-4874-9fb2-3ab31c624672.png)
+![Screenshot from 2022-04-10 01-14-08](https://user-images.githubusercontent.com/51710726/162593292-65c7103b-f883-40bb-8d88-5d1c70235482.png)
 
 
 
@@ -9,8 +11,8 @@ David Musembi
 This is an app where one creates quotes.The  quotes  can be liked or disliked based on the user interacting with the page.One can also be able to delete a quote.
 
 ### Live Link
+https://davidmusembi.github.io/Quotes-app/
 
-* 
 
 ## Installation
 
