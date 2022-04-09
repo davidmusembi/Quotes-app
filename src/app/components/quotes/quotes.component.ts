@@ -9,29 +9,30 @@ import { Quotes } from 'src/app/models/quotes';
 export class QuotesComponent implements OnInit {
 
    quotes:Quotes[]=[
-        new Quotes('Sometimes life is going to hit you in the head. Dont loose faith.','Steve Jobs','Felista Kiriinya', new Date(2020,1,23),2,1),
-        new Quotes('The greatest glory in living lies not in never falling, but in rising every time we fall.','Nelson Mandela','Faith Mucami',new Date(2020,3,30),4,3),
-        new Quotes('Competitions are for horses not artists','Anonymous', 'Eustine whels',new Date(2020,7,23),3,4),
-        new Quotes('If life were predictable it would cease to be life, and be without flavor.','Eleanor Roosevelt', 'James Racher',new Date(2020,4,10),1,0),
-        new Quotes('The way to get started is to quit talking and begin doing','Walt Disney','Harry Thunder',new Date(2020,5,9),9,2),
-        new Quotes('Life is what happens when you are making other plans','John Lennon', 'George Whither',new Date(2020,6,12),1,0),
+        new Quotes('Programming is not about what you know; it is about what you can figure out.','Chris Pine','David Musembi', new Date(2022,3,9),0,0),
+        new Quotes('The only way to learn a new programming language is by writing programs in it.','Dennis Ritchie','David Musembi',new Date(2022,1,9),0,0),
+        new Quotes('Sometimes it is better to leave something alone, to pause, and that is very true of programming.','Joyce Wheeler', 'David Musembi',new Date(2021,4,9),0,0),
+        new Quotes('Testing leads to failure, and failure leads to understanding.',' Burt Rutan', 'Brian Musembi',new Date(2022,4,9),0,0),
+        new Quotes('The best error message is the one that never shows up.','homas Fuchs','David Musembi',new Date(2022,4,9),0,0),
+        new Quotes('The most damaging phrase in the language is.. it is always been done this way','Grace Hopper', 'David Musembi',new Date(2022,4,9),0,0),
     ]
     
     //function for ading a new quote
-    addNewQuote(quote) {
+    addNewQuote(quote: any) {
        
         this.quotes.push(quote)
       }
 
     //function for toggling small text
-    toggleDetails(index) {
+    
+    toggleDetails(index: number):void {
         
         this.quotes[index].showDetails = !this.quotes[index].showDetails;
       }  
 
     //function for deleting quote
 
-    deletingQuote(deleteQuote, index){
+    deletingQuote(deleteQuote: any, index: any){
         if(deleteQuote){
             let toDelete =confirm("Are you sure you want to delete this quote?")
 
