@@ -1,1 +1,53 @@
-<p>quotes works!</p>
+
+<div class="container-fluid">
+    <div class="header">
+        <h1 class="text-center">Get Your Daily Inspiration</h1>
+        <br>
+        <p class="text-center" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size:13px;"> BELIEVE IN YOURSELF , LISTEN TO YOUR GUT AND DO WHAT YOU LOVE!</p>
+
+    </div>
+    <div class="row">
+        
+        <div class="col-sm-12">
+            <div class="cards">
+                <div class="card"  *ngFor='let quote of quotes; let i=index'>
+                    <div class="card-body" appHighlightQuote *ngIf="highlightHighest() == quote.upVote && quote.upVote > 0" >
+                    <blockquote class="blockquote mb-0 card-body">
+                        <p>{{quote.quote}}</p>
+                        <footer class="blockquote-footer">
+                            <cite title="Source Title" style="color: black;">{{quote.author|titlecase}}</cite>
+                            <small style="float:right; font-size:0.7rem;" (click)="toggleDetails(i);"><b style="color:rgb(90, 11, 74)">See more</b> </small>
+                        </footer>
+                        
+                      </blockquote>
+                    </div>
+                    <div class="card-body"  *ngIf="highlightHighest() != quote.upVote || quote.upVote == 0" >
+                        <blockquote class="blockquote mb-0 card-body">
+                            <p>{{quote.quote}}</p>
+                            <footer class="blockquote-footer">
+                                <cite title="Source Title" style="color: black;">{{quote.author|titlecase}}</cite>
+                                <small style="float:right; font-size:0.7rem;" (click)="toggleDetails(i);"><b style="color:rgb(90, 11, 74)">See more</b> </small>
+                            </footer>
+                            
+                          </blockquote>
+                        </div>
+                    <app-quotes-details *ngIf ="quote.showDetails " [quote]='quote' (deleteQuote) ="deletingQuote($event,i)"></app-quotes-details>
+                </div>
+
+            </div>
+        </div>
+          
+    </div>
+    <div>
+        <h5 class="text-center" >GET TO INSPIRE SOMEONE TODAY!</h5>
+    </div>
+    <hr style="width:50%">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <app-quotes-form (addQuotes)="addNewQuote($event)"></app-quotes-form>
+        </div>
+        <div class="col-sm-2"></div>
+
+    </div>
+</div>
