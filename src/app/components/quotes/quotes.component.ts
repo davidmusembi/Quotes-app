@@ -11,10 +11,10 @@ export class QuotesComponent implements OnInit {
    quotes:Quotes[]=[
         new Quotes('Programming is not about what you know; it is about what you can figure out.','Chris Pine','David Musembi', new Date(2022,3,9),0,0),
         new Quotes('The only way to learn a new programming language is by writing programs in it.','Dennis Ritchie','David Musembi',new Date(2022,1,9),0,0),
-        new Quotes('Sometimes it is better to leave something alone, to pause, and that is very true of programming.','Joyce Wheeler', 'David Musembi',new Date(2021,4,9),0,0),
-        new Quotes('Testing leads to failure, and failure leads to understanding.',' Burt Rutan', 'Brian Musembi',new Date(2022,4,9),0,0),
-        new Quotes('The best error message is the one that never shows up.','homas Fuchs','David Musembi',new Date(2022,4,9),0,0),
-        new Quotes('The most damaging phrase in the language is.. it is always been done this way','Grace Hopper', 'David Musembi',new Date(2022,4,9),0,0),
+        new Quotes('Sometimes it is better to leave something alone, to pause, and that is very true of programming.','Joyce Wheeler', 'David Musembi',new Date(2021,2,14),0,0),
+        new Quotes('Testing leads to failure, and failure leads to understanding.',' Burt Rutan', 'Brian Musembi',new Date(2021,2,15),0,0),
+        new Quotes('The best error message is the one that never shows up.','homas Fuchs','David Musembi',new Date(2020,6,11),0,0),
+        new Quotes('The most damaging phrase in the language is.. it is always been done this way','Grace Hopper', 'David Musembi',new Date(20219,6,2),0,0),
     ]
     
     //function for ading a new quote

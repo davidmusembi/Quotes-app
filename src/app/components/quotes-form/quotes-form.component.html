@@ -16,7 +16,7 @@
                             
                     ></textarea>
                     <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
-                        A quote is required
+                        Enter Your Quote
                       </div>
                 </div>
                 <div class="form-group">
@@ -30,12 +30,12 @@
                            [(ngModel)]="newQuotes.author"
                            required>
                     <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
-                            An author is required
+                            Enter the author of the quote
                      </div>       
                 </div>
-                <div class="form-group">
-                    <label for="author">Submitted by:</label>
-                    <input type="text" 
+                <div class="form-group" >
+                    <label  for="author">Submitted by:</label>
+                    <input  type="text" 
                            class="form-control"
                            name="name"
                            placeholder="Name..."
@@ -44,7 +44,7 @@
                            [(ngModel)]="newQuotes.name"
                            required>
                      <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-                            You are required to enter your name
+                            enter your name
                      </div>       
                 </div>
                 <br>

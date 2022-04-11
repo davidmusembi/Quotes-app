@@ -10,9 +10,9 @@
             <div class="cards">
                 <div class="card"  *ngFor='let quote of quotes; let i=index'>
                     <div class="card-body" appHighlightQuote *ngIf="highlightHighest() == quote.upVote && quote.upVote > 0" >
-                    <blockquote class="blockquote mb-0 card-body">
+                    <blockquote class="blockquote mb-0 card-body"> 
                         <p>{{quote.quote}}</p>
-                        <footer class="blockquote-footer">
+                        <footer class="blockquote-footer" >
                             <cite title="Source Title" style="color: rgb(255, 255, 255);">{{quote.author|titlecase}}</cite>
                             <small style="float:right; font-size:0.7rem;" (click)="toggleDetails(i);"><b style="color:rgb(250, 248, 249) ; cursor: pointer" >See more</b> </small>
                         </footer>
@@ -48,10 +48,11 @@
     </div>
 </div>
 <section>
-    <footer>
+    <footer class="foot">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
+                    <p class="text-center">With Great Power comes with great responsibility</p>
                     <p class="text-center">Copyright &copy; 2022</p>
                 </div>
             </div>

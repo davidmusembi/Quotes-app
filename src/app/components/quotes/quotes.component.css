@@ -25,6 +25,7 @@ font-family: 'Special Elite', cursive;    font-size: 30px;
     transition: all 0.3s ease-in-out;
     background:black;
     color:white;
+    border-radius:35px;
   }
 
 .card:hover {
@@ -42,5 +43,9 @@ font-family: 'Special Elite', cursive;    font-size: 30px;
   }
   .blockquote {
     font-size: 1rem;
+    color:white;
+  }
+  .foot{
+    background:black;
     color:white;
   }
